@@ -1,3 +1,10 @@
+To-Do List.
+
+Tecnologias utilizadas: HTML, CSS e React.
+
+Instruções para rodar o projeto localmente: Colocar API do CRUD CRUD no ApiContext.JSX.
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
