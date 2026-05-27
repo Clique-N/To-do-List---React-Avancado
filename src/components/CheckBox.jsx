@@ -2,7 +2,6 @@ import { useContext } from "react";
 import { ApiContext } from "../context/ApiContext";
 import '../css/Style.css';
 
-// Function para acrescentar o style e checkbox de conclusão
 function TaskCompleted({task}){
 
     const {toggleTask} = useContext(ApiContext)
