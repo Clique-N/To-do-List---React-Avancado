@@ -12,7 +12,7 @@ function AddTaskForm(){
     e.preventDefault ();
     if(taskValue.trim () === '') return;
 
-    addTask(taskValue); //Importante chamar a função, pois sem ela o submit não tem para onde enviar o input que o usuário fez
+    addTask(taskValue);
     reset()
     }    
 
