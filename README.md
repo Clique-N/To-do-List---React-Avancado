@@ -1,23 +1,43 @@
-To-Do List.
+## To-Do List.
 
-Tecnologias utilizadas: HTML, CSS e React.
+## 📌 | 🇺🇸 Description | 🇧🇷 Descrição  
+ - 🇺🇸 | A filtered to-do list for React studies. Users can add tasks, mark them as completed and filter by all, completed or incomplete tasks.
+ - 🇧🇷 | Uma lista de tarefas para estudo de React. Usuários podem adicionar tarefas e marcar como concluídas, além de poder filtrar entre todas as tarefas, só as completas ou as incompletas.
 
-Instruções para rodar o projeto localmente: Colocar API do CRUD CRUD no ApiContext.JSX.
+## 🎯 | 🇺🇸 Project purpose | 🇧🇷 Propósito do projeto 
+  - 🇺🇸 | Practice working with filters and APIs in React.
+  - 🇧🇷 | Projeto prático para aprendizado de filtros e APIs em React.
 
+## ⚙️ | 🇺🇸 Technologies | 🇧🇷 Tecnologias
+  - React
+  - JavaScript
+  - CSS
+  - HTML
 
-# React + Vite
+## 📸 | 🇺🇸 Images | 🇧🇷 Imagens  
+  > <img width="457" height="291" alt="image" src="https://github.com/user-attachments/assets/61d038ed-eab2-4563-bf82-7b576a74c3e1" />
+  
+  > <img width="457" height="340" alt="image" src="https://github.com/user-attachments/assets/7c497fd1-cc41-447a-ac12-55faaec64b58" />
+  
+  > <img width="457" height="381" alt="To-do List" src="https://github.com/user-attachments/assets/82b707cd-8e5a-466c-b743-32599fe81368" />
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 | 🇺🇸 How to run the project locally | 🇧🇷 Instruções para rodar localmente
+  > - 🇺🇸 | 1. Download the .zip file from the GitHub repository (https://github.com/Clique-N/Todo-List-React).
+  > - 🇧🇷 | 1. Faça o download do arquivo .zip no repositório do GitHub (https://github.com/Clique-N/Todo-List-React).
+  
+  > - 🇺🇸 | 2. Extract the .zip file to a folder your computer, then open the project in VS Code.
+  > - 🇧🇷 | 2. Extraia o arquivo .zip na pasta do seu computador, e em seguida abra no VS Code.
 
-Currently, two official plugins are available:
+  > - 🇺🇸 | 3. Open the terminal and run the following command to install the dependencies: `npm install`.
+  > - 🇧🇷 | 3. Abra o terminal e instale as dependências com o seguinte comando: `npm install`
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+  > - 🇺🇸 | 4. Go to the `context` folder and open `ApiContext.jsx`. Then replace `API_URL` with your CRUDCRUD API URL.
+  > - 🇧🇷 | 4. Entre na pasta `context` e depois em `ApiContext.jsx`. Altere a `API_URL` para a sua API do CRUDCRUD.
 
-## React Compiler
+  > - 🇺🇸 | 5. Open the terminal and run the following command to start the project locally: `npm run dev`.
+  > - 🇧🇷 | 5. Abra o terminal e rode o projeto localmente com o seguinte comando: `npm run dev`. 
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📝 | 🇺🇸 What I learned | 🇧🇷 Meus aprendizados
+  - 🇺🇸 | Working with APIs, React Context, hooks, and memoization.
+  - 🇧🇷 | Trabalhar com APIs, React Context, hooks e memoização. 
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
