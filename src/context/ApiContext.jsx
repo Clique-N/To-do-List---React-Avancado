@@ -1,12 +1,12 @@
 import { createContext, useState, useEffect } from "react";
 
-export const ApiContext = createContext(); // Usado no código globalmente passando os valores que forem fornecidos pelo ApiProvider
+export const ApiContext = createContext();
 
-const API_URL = 'https://crudcrud.com/api/e1629bc4ce0642acb0a24fc68e129e1b/task';
+const API_URL = // Update the API_URL. EX "https://crudcrud.com/api/.../task"
 
-export default function ApiProvider({children}){   //ApiProvider vai ser chamado somente no App.Jsx 
+export default function ApiProvider({children}){
 
-    const [apiTasks, setApiTasks] = useState([]); //Quando useState é usado [], faz com que crie um array
+    const [apiTasks, setApiTasks] = useState([]);
 
     console.log(apiTasks);
 
@@ -16,7 +16,7 @@ export default function ApiProvider({children}){   //ApiProvider vai ser chamado
         
         fetch(API_URL)
         .then(res => res.json())
-        .then(data => setApiTasks(data)) //Pega os dados do json da criação de tafefa e aplica no const apiTasks
+        .then(data => setApiTasks(data))
         .catch(error => console.error("Failed to search tasks", error))
     },[])
 
@@ -42,7 +42,7 @@ export default function ApiProvider({children}){   //ApiProvider vai ser chamado
 
         console.log("toggleTask requested");
 
-        const updatedTask = {description: task.description, updated: !task.updated} // Puxa o description e o updated do addTask, não precisando procurar com .find
+        const updatedTask = {description: task.description, updated: !task.updated}
 
         fetch(`${API_URL}/${task._id}`,{
             method: 'PUT',
