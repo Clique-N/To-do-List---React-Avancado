@@ -8,7 +8,7 @@ function DeleteTask({id}){
 
     return (
         <>
-            <button className="button" onClick={() => deleteTask(id)}>Apagar tarefa</button>
+            <button className="button" onClick={() => deleteTask(id)}>Delete task</button>
         </>
     )
 }

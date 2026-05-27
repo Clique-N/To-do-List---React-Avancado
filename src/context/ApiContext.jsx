@@ -2,7 +2,7 @@ import { createContext, useState, useEffect } from "react";
 
 export const ApiContext = createContext(); // Usado no código globalmente passando os valores que forem fornecidos pelo ApiProvider
 
-const API_URL = 'https://crudcrud.com/api/311877e0a06b4ad69e7834847f7ac294/task';
+const API_URL = 'https://crudcrud.com/api/e1629bc4ce0642acb0a24fc68e129e1b/task';
 
 export default function ApiProvider({children}){   //ApiProvider vai ser chamado somente no App.Jsx 
 
@@ -12,17 +12,17 @@ export default function ApiProvider({children}){   //ApiProvider vai ser chamado
 
     useEffect(() => {
 
-        console.log("GET inicial");
+        console.log("Initial GET requested");
         
         fetch(API_URL)
         .then(res => res.json())
         .then(data => setApiTasks(data)) //Pega os dados do json da criação de tafefa e aplica no const apiTasks
-        .catch(error => console.error("Erro ao buscar tarefas", error))
+        .catch(error => console.error("Failed to search tasks", error))
     },[])
 
     function addTask(description){
 
-        console.log("addTask solicitado");
+        console.log("addTask requested");
 
         const newTask = {description, updated: false}       
 
@@ -35,12 +35,12 @@ export default function ApiProvider({children}){   //ApiProvider vai ser chamado
         .then(newTask => {
             setApiTasks(prev => [...prev, newTask]);
         })
-        .catch(error => console.error("Erro ao adicionar tarefa", error))
+        .catch(error => console.error("Failed to add task", error))
     }
 
     function toggleTask(task){
 
-        console.log("toggleTask solicitado");
+        console.log("toggleTask requested");
 
         const updatedTask = {description: task.description, updated: !task.updated} // Puxa o description e o updated do addTask, não precisando procurar com .find
 
@@ -56,7 +56,7 @@ export default function ApiProvider({children}){   //ApiProvider vai ser chamado
 
     function deleteTask(id) {
 
-        console.log("deleTask solicitado");        
+        console.log("deleteTask requested");        
 
         fetch(`${API_URL}/${id}`,{
             method: 'DELETE'
@@ -64,7 +64,7 @@ export default function ApiProvider({children}){   //ApiProvider vai ser chamado
         .then(()=> {
             setApiTasks(apiTasks.filter( apiTask=> apiTask._id !== id))
         })
-        .catch(error => console.error("Erro ao deleter produto", error))
+        .catch(error => console.error("Failed to delete task", error))
     } 
 
     return(

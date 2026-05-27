@@ -21,9 +21,9 @@ export default function FilteredList(){
     return(
         <div>
             <select className="select" name={filteredTasks} value={filter} onChange={(e)=>setFilter(e.target.value)}>
-                <option className="taskItem" value="all">Todas as tarefas</option>
-                <option className="taskItem" value="pending">Tarefas pendentes</option>
-                <option className="taskItem" value="done">Tarefas concluídas</option>
+                <option className="taskItem" value="all">All tasks</option>
+                <option className="taskItem" value="pending">Pending tasks</option>
+                <option className="taskItem" value="done">Completed tasks</option>
             </select>
             {filteredTasks.map((task)=>(
                 <div key={task._id}>

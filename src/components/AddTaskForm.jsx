@@ -19,9 +19,9 @@ function AddTaskForm(){
     return(
         <form onSubmit={handleSubmit}>
             <div>
-                <input className="input" type="text" placeholder="Descrição" value={taskValue} 
+                <input className="input" type="text" placeholder="Description" value={taskValue} 
                 onChange={onChange}/>
-                <button className="button" type="submit">Adicionar tarefa</button>                
+                <button className="button" type="submit">Add new task</button>                
             </div>
         </form>
     )
